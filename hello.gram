@@ -1,0 +1,15 @@
+#JSGF V1.0;
+
+/**
+ * JSGF Grammar for Hello World example
+ */
+
+grammar hello;
+
+public <all> = <size> <confirm> <toppings> <confirm> <crust> <confirm> <thickness> <confirm>;
+<size> = (big | medium | regular);
+<toppings> = (cheese | mushrooms | chicken | seafood | pepperoni);
+<crust> = (stuffed | pan);
+<thickness> = (thick | thin);
+<confirm> = (yes | no);
+
