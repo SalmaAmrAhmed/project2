@@ -1,3 +1,2 @@
-Main-Class: FreeTTSHelloWorld
-Class-Path: ../lib/freetts.jar
-Class-Path: ../lib/sphinx4.jar ../lib/WSJ_8gau_13dCep_16k_40mel_130Hz_6800Hz.jar
+Main-Class: edu.cmu.sphinx.demo.project2.Simulate
+Class-Path: ../lib/sphinx4.jar ../lib/jsapi.jar ../lib/TIDIGITS_8gau_13dCep_16k_40mel_130Hz_6800Hz.jar ../lib/freetts.jar

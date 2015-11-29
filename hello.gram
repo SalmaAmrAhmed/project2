@@ -6,8 +6,8 @@
 
 grammar hello;
 
-public <all> = <size> <confirm> <toppings> <confirm> <crust> <confirm> <thickness> <confirm>;
-<size> = (big | medium | regular);
+public <all> = <size> | <confirm> | <toppings> | <crust> | <thickness>;
+<size> = (big | medium | regular | small);
 <toppings> = (cheese | mushrooms | chicken | seafood | pepperoni);
 <crust> = (stuffed | pan);
 <thickness> = (thick | thin);

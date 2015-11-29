@@ -48,6 +48,25 @@ public class Field {
 
             // Read Input
             String line = sc.nextLine().trim();
+//            try {
+//                SentenceRecognizer sentenceRecognizer = new SentenceRecognizer();
+//                sentenceRecognizer.startup();
+//                System.out.println("GOT THE LOCK");
+//                sentenceRecognizer.addSentenceListener(new SentenceListener() {
+//                    @Override
+//                    public void notify(String read) {
+//                        readData = read;
+//                        System.out.println("GOT : " + readData);
+//                        mutex.notify();
+//                        System.out.println("LOCK RELEASED");
+//                    }
+//                });
+//                sentenceRecognizer.microphoneOn();
+//
+//            } catch (IOException e) {
+//                e.printStackTrace();
+//            }
+
             if(allowedVals.containsKey(line)){
                 String key = allowedVals.get(line);
                 variables.put(name, key);

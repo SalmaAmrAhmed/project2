@@ -95,7 +95,6 @@ public class Simulate {
 
 	public static void main(String[] args) {
 
-
 		Simulate sim = new Simulate();
 		sim.run();
 
