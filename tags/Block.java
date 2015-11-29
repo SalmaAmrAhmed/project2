@@ -10,6 +10,7 @@ import org.w3c.dom.Node;
 import org.w3c.dom.Text;
 
 import edu.cmu.sphinx.demo.project2.ScriptManager;
+import edu.cmu.sphinx.demo.project2.Speaker;
 
 public class Block {
     Element node;
@@ -41,6 +42,7 @@ public class Block {
             }
         }
         System.out.println(buf.toString());
+        Speaker.speak(buf.toString());
         done = true;
     }
 

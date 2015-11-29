@@ -7,6 +7,8 @@ import java.util.Scanner;
 import org.w3c.dom.Element;
 import org.w3c.dom.NodeList;
 
+import edu.cmu.sphinx.demo.project2.Speaker;
+
 public class Field {
 
     String name;
@@ -40,7 +42,9 @@ public class Field {
 
         do {
             // Prompt Text
-            System.out.println(Prompt.parsePrompt(prompt, variables, scripts) + " " + allowedVals.keySet());
+            String promptText = Prompt.parsePrompt(prompt, variables, scripts) + " " + allowedVals.keySet();
+            System.out.println(promptText);
+            Speaker.speak(promptText);
 
             // Read Input
             String line = sc.nextLine().trim();
